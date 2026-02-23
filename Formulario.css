@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin-top: 280px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(WallpaperEngineOverride_randomBHLCHS.jpg);
+}
+
+.container {
+    border: solid 2px rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 75px;
+    backdrop-filter: blur(5px);
+    box-shadow: rgb(255, 255, 255) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+form {
+    display: none;
+}
+
+form.active {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-top: 15px;
+    padding: 8px;
+    border-radius: 10px;
+    background: rgba(155, 146, 146, 0.2);
+    border: rgba(255, 255, 255, 0.2);
+    border: solid 1px rgb(255, 255, 255);
+}
+
+input::placeholder {
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+button {
+    margin-top: 15px;
+    padding: 7px;
+    border-radius: 10px;
+    position: relative;
+    width: 180px;
+    margin-left: 5px;
+    cursor: pointer;
+    background: rgba(155, 146, 146, 0.2);
+    border: rgba(255, 255, 255, 0.2);
+    border: solid 1px rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    transition: all 1s ease;
+}
+
+button:hover {
+    background-color: rgb(196, 96, 24);
+    transition: 1s;
+    box-shadow: rgba(196, 96, 24, 0.3) 0px 19px 38px, rgba(196, 96, 24, 0.22) 0px 15px 12px;
+}
+
+p {
+    margin-top: 15px;
+    color: rgb(243, 249, 255);
+    font-weight: 600;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+}
+
+a {
+    color: rgb(22, 11, 3);
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+a:hover {
+   text-decoration: none;
+   transition: 1s;
+   box-shadow: 0 5px 29px rgb(255, 255, 255);
+   color: rgb(255, 255, 255);
+}
+
+.input-container i {
+    color: rgb(255, 255, 255);
+}
+
+input:focus {
+    outline: none;
+}

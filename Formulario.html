@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Interativo</title>
+    <link rel="stylesheet" href="Formulario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="Formulario.js"></script>
+</head>
+<body>
+
+    <!--formulario de login-->
+    <div class="container">
+
+        <form id="loginForm" class="active">
+            <h2>Login</h2>
+
+        <div class="input-container">
+            <input type="email" placeholder="Email" required>
+        <i class="fa fa-user"></i>
+        </div>
+        
+        <div class="input-container">
+            <input type="password" placeholder="Senha" required>
+        <i class="fa fa-lock"></i>
+        </div>
+ 
+            <button type="submit">Login</button>
+            <p>
+                Näo tem conta?
+            <a onclick="mostrarCadastro()">Cadastre-se</a>
+            </p>
+        </form>
+
+        <!--formulario de cadastrar-->
+        <form id="cadastroForm">
+            <h2>Cadastre-se</h2>
+
+        <div class="input-container">
+            <input type="text" placeholder="Nome" required>
+        <i class="fa fa-user"></i>
+        </div>
+
+        <div class="input-container">
+            <input type="email" placeholder="Email" required>
+        <i class="fa fa-envelope"></i>
+        </div>
+
+        <div class="input-container">
+            <input type="password" placeholder="Senha" required>
+        <i class="fa fa-lock"></i>
+        </div>
+            <button type="submit">Cadastre-se</button>
+            <p>
+                Já tem uma conta?
+            <a onclick="mostrarlogin()">Faça Login</a>
+            </p>
+        </form>
+
+    </div>
+</body>
+</html>
