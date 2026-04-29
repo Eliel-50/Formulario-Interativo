@@ -1,0 +1,25 @@
+form {
+    position: absolute;
+    opacity: 0;
+    transform: translateY(50px);
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+form.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+form.saindo {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    min-height: 270px;
+    width: 200px;
+}
